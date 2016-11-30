@@ -1,0 +1,212 @@
+.contact_form {
+  padding-top: 40px;
+}
+
+.form-wrapper {
+  width: 410px;
+  margin: 0px;
+  border-radius: 10px;
+  }
+
+
+.form-wrapper input,  {
+  width: 250px;
+  height: 30px;
+  padding: 10px 5px;
+  float: left;
+  font: bold 15px 'Source Sans Pro', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  margin-bottom: 0px;
+  }
+
+.form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  }
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: none;
+  box-shadow: none;
+  }
+
+.form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+  }
+
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+  }
+
+.form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+  }
+
+
+.form-wrapper button,  {
+  overflow: hidden;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  color: #fff;
+  background: #16BDF0;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+  transition: .3s;
+  }
+
+.form-wrapper button:hover{
+  background: #93c9ff;
+  
+  }
+
+.form-wrapper button:active,
+.form-wrapper button:focus{
+  background: #93c9ff;
+  outline: 0;
+  }
+
+
+.form-wrapper button:hover:before {
+  border-right-color: #e54040;
+  }
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before {
+  border-right-color: #c42f2f;
+  }
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+  }
+
+.join-button  {
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2% 5%;
+  color: #fff;
+  background: #16BDF0;
+  border-radius: 10px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+  letter-spacing: 2px;
+  }
+
+
+
+
+//Form Changes for Responsive
+
+ @media #{$medium-and-down} {
+
+    .form-wrapper {
+      width: 100%;
+      padding: 0 20%;
+    }
+
+    .form-wrapper input,  {
+      width: 65.3%;
+      border-radius: 15px 15px;
+    }
+
+    .form-wrapper button {
+      height: 50px;
+      width: 30%;
+      font-size: 16px;
+      border-radius: 15px 15px;
+    }
+
+  }
+
+ @media #{$small-and-down} {
+
+    .form-wrapper input,  {
+      width: 58%;
+    }
+
+    .form-wrapper button {
+      width: 35%;
+      font-size: 16px;
+    }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/*FORM REVENUE CALCULATOR*/
+
+.cashform {
+  text-align: center;
+  padding: 2% 20%;
+}
+
+.form-wrapper1 {
+  width: 100%;
+  padding: 0 20%;
+}
+
+
+.form-wrapper1 input,  {
+  height: 40px;
+  padding: 10px 5px;
+  margin-top: 35px;
+  border: 0;
+  background: #fff;
+  letter-spacing: 1.2px; 
+  border-radius: 3px 0 0 3px;
+  margin-bottom: 0px;
+  }
+
+#clicked {
+  margin-top: 35px;
+}
+
+.form-wrapper1 button {
+  overflow: hidden;
+  border: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  color: #fff;
+  background: #16BDF0;
+  border-radius: 3px 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+  transition: .3s;
+  }
+
+.form-wrapper1 button:hover{
+  background: #93c9ff;
+  
+  }
+
+.MyEdit {
+  font-size: 30px;
+  color: #1DA1F2;
+}
+

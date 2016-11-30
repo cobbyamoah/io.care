@@ -1,0 +1,144 @@
+.sub-heading {
+  font-size: 3em;
+  font-weight: 400;
+  text-align: center;
+  color: #16BDF0;
+  margin: 0px;
+}
+
+.sub-text {
+  font-size: 1.7em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+html{
+  line-height: 1.5;
+
+  @media only screen and (min-width: 0) {
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: $medium-screen) {
+    font-size: 14.5px;
+  }
+
+  @media only screen and (min-width: $large-screen) {
+    font-size: 15px;
+  }
+
+  font-family: 'Asap', sans-serif;
+  font-weight: normal;
+  color: $off-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+  font-weight: 300;
+  
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+h5 {
+  color: #1DA1F2;
+}
+
+
+
+.benefit-text {
+  margin-top: 0px;
+  color: #16BDF0;
+  text-align: center;
+  font-weight: 200;
+}
+
+.benefit-text-2 {
+  text-align: center;
+}
+
+.subtext {
+  font-size: 10px;
+  color: #4c4c4c;
+}
+
+.fttext {
+  font-size: 20px;
+  text-align: center;
+}
+
+.calc-text {
+  color: #1DA1F2;
+}
+
+.sliderheader {
+  color: #fff;
+  text-align: center;
+  font-weight: 200;
+}
+
+.testimonial {
+  line-height: 29px;
+}
+
+
+// Header Styles
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
+h2 { font-size: $h2-fontsize; line-height: 110%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
+h3 { font-size: $h3-fontsize; line-height: 110%; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;}
+h4 { font-size: $h4-fontsize; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
+h5 { font-size: $h5-fontsize; line-height: 150%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
+h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
+
+// Text Styles
+em { font-style: italic; }
+strong { font-weight: 500; }
+small { font-size: 75%; }
+.light { font-weight: 300; }
+.thin { font-weight: 200; }
+
+
+.flow-text{
+  font-weight: 300;
+  $i: 0;
+  @while $i <= $intervals {
+    @media only screen and (min-width : 360 + ($i * $interval-size)) {
+      font-size: 1.2rem * (1 + (.02 * $i));
+    }
+    $i: $i + 1;
+  }
+
+  // Handle below 360px screen
+  @media only screen and (max-width: 360px) {
+    font-size: 1.2rem;
+  }
+}
+
+
+//Responsive Typography 
+
+ @media #{$small-and-down} {
+    
+    h1 {
+      font-size: 2.4em;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      margin: 0 5px;
+    }
+    
+  }
