@@ -3018,7 +3018,7 @@ input[type=range] + .thumb {
         left: 100%; } }
 
 .test {
-  background-color: black; }
+  display: none; }
 
 nav {
   color: #fff;

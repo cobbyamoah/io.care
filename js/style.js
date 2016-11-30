@@ -116,31 +116,30 @@ $(function(){
 $(function() {
   if($(window).width() <= 740) {
 
-    $("#benefits-zone").html('<img class="mobile-pcp" src="images/mobilepcp.png" width="100%" height="100%">');
+    $("#benefits-zone").html('<img id="mobile-pcp" onclick="mpcpShuffle(); return false;" src="images/mobilepcp.png" width="100%" height="100%">');
 
-    $("#mobile-benefits").html('<img class="mobile-sp" src="images/mobilesp.png" width="100%" height="100%">'); 
-
-    $('.mobile-pcp' ).click ( function () {
-      $('.mobile-pcp').remove();
-      $('#mobile-benefits').remove();
-      $('#benefits-zone').html("<img src='images/pcpbenefits-mobile.png' width='100%' height='100%'>");  
-    });
-
-  $( '.mobile-sp' ).click ( function () {
-    $('.mobile-pcp').remove();
-    $('#mobile-benefits').remove();
-    $('#benefits-zone').html("<img src='images/spbenefits-mobile.png' width='100%' height='100%'>");  
-  } );
-
-   
+    $("#mobile-benefits").html('<img id="mobile-sp" onclick="mspShuffle(); return false;" src="images/mobilesp.png" width="100%" height="100%">'); 
   }
+
 });
 
 
+ function mpcpShuffle() {
+    $('#mobile-benefits').remove();
+    $('#benefits-zone').html("<img id='b-img' src='images/pcpbenefits-mobile.png' onclick='backToFuture(); return false;' width='100%' height='100%'>"); 
+  }
+  
+  function mspShuffle() {
+    $('#mobile-benefits').remove();
+    $('#benefits-zone').html("<img id='b-img' src='images/spbenefits-mobile.png' onclick='backToFuture(); return false;' width='100%' height='100%'>"); 
+  }
 
 
 
-
+ function backToFuture() {
+    $("#benefits-zone").html('<img id="mobile-pcp" onclick="mpcpShuffle(); return false;" src="images/mobilepcp.png" width="100%" height="100%">');
+    $("#recycle").html('<img id="mobile-sp" onclick="mspShuffle(); return false;" src="images/mobilesp.png" width="100%" height="100%">'); 
+  }
 
 
 
