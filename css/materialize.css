@@ -3102,6 +3102,12 @@ nav {
   border-bottom: none;
   display: inline; }
 
+#nav-mobile li a:focus {
+  color: #16BDF0;
+  margin-bottom: 0px;
+  border-bottom: none;
+  display: inline; }
+
 i.icons-scroll {
   color: #000; }
 
@@ -3422,6 +3428,9 @@ small {
 
 .sp:hover {
   opacity: 0.4; }
+
+#mobile-pcp, #mobile-sp {
+  padding: 0 12%; }
 
 /*Card Styling Ends*/
 .card-panel {
