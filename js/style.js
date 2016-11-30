@@ -9,7 +9,7 @@
    $('.navstyle').on('sticky-start', function() { 
       $("nav").addClass('stickynav');
       $('.lg').remove();
-      $("#logo-container").html('<img class="lg" src="images/fulllogo.png" width="200px" height="50px" />');
+      $("#logo-container").html('<img class="lg" src="images/new-black.png" width="242px" height="63px" />');
       $('.material-icons').css('color', 'black')
       
     });
@@ -17,7 +17,7 @@
     $('.navstyle').on('sticky-end', function() { 
       $(".navstyle").removeClass('stickynav');
       $('.lg').remove();
-      $("#logo-container").html('<img class="lg" src="images/lightblue-logo.png" width="200px" height="50px" />');
+      $("#logo-container").html('<img class="lg" src="images/new-black.png" width="242px" height="63px" />');
       $('.material-icons').css('color', 'white')
     });
 
@@ -40,12 +40,12 @@ var query = Modernizr.mq('(max-width: 700px)');
   $( '.pcp' ).click ( function () {
     $('.pcp', ".sp").remove();
     $('#benefits-zone').html("<div><img class='benefit1' src='images/benefits2.png' width='100%' height='100%'></div>");  
-  } );
+  });
 
   $( '.sp' ).click ( function () {
     $('.pcp', ".sp").remove();
     $('#benefits-zone').html("<div><img src='images/benefits1.png' width='100%' height='100%'></div>");  
-  } );
+  });
 
 
 

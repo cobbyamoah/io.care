@@ -3125,7 +3125,7 @@ i.icons-scroll {
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
-  padding-top: 4px;
+  padding-top: 1px;
   white-space: nowrap; }
   .brand-logo.center {
     left: 50%;
