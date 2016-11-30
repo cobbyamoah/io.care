@@ -31,21 +31,25 @@ var query = Modernizr.mq('(max-width: 700px)');
    $('.form-wrapper').remove();
    $("#contact_form").html(joinbtn);
     } else {
-       console.log("Failed");
+       console.log("->");
     };
 
 
 
 //Benefits section - cards shuffle 
-  $( '.pcp' ).click ( function () {
-    $('.pcp', ".sp").remove();
-    $('#benefits-zone').html("<div><img class='benefit1' src='images/benefits2.png' width='100%' height='100%'></div>");  
-  });
 
-  $( '.sp' ).click ( function () {
-    $('.pcp', ".sp").remove();
-    $('#benefits-zone').html("<div><img src='images/benefits1.png' width='100%' height='100%'></div>");  
-  });
+  function pcpShuffle () {
+    $('#benefits-zone').html("<img onclick='backShuffle(); return false;' src='images/benefits2.png' width='100%' height='100%'>");
+  }
+
+  function backShuffle () {
+        $('#benefits-zone').html('<div class="wrapper">' + '<div id="one"><br>' + '<img class="pcp" onclick="pcpShuffle(); return false;" src="images/pcp.png" width="80%" height="80%">'
+        + '</div>' + '<div id="two"><br><img class="sp" onclick="spShuffle(); return false;" src="images/sp.png" width="80%" height="80%"></div>' + '</div>'); /*benefit zone ends*/ 
+  }
+
+  function spShuffle () {
+    $('#benefits-zone').html("<img onclick='backShuffle(); return false;' src='images/benefits1.png' width='100%' height='100%'>");
+  }
 
 
 
