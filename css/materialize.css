@@ -3096,18 +3096,6 @@ nav {
     nav ul.left {
       float: left; }
 
-#nav-mobile li a:active {
-  color: #16BDF0;
-  margin-bottom: 0px;
-  border-bottom: none;
-  display: inline; }
-
-#nav-mobile li a:focus {
-  color: #16BDF0;
-  margin-bottom: 0px;
-  border-bottom: none;
-  display: inline; }
-
 i.icons-scroll {
   color: #000; }
 
@@ -5330,7 +5318,10 @@ input[type=range]:focus::-ms-fill-upper {
     line-height: 48px;
     padding: 0 32px; }
     .side-nav a:hover {
-      background-color: rgba(0, 0, 0, 0.05); }
+      background-color: rgba(0, 0, 0, 0.05);
+      margin-bottom: 0px;
+      border-bottom: none;
+      display: block; }
     .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
       margin: 10px 15px; }
     .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {

@@ -40,6 +40,10 @@
 
   a {
     color: $sidenav-font-color;
+
+    
+
+
     display: block;
     font-size: $sidenav-font-size;
     font-weight: 500;
@@ -47,7 +51,16 @@
     line-height: $sidenav-item-height;
     padding: 0 ($sidenav-padding * 2);
 
-    &:hover { background-color: rgba(0,0,0,.05);}
+
+
+
+
+
+    &:hover { background-color: rgba(0,0,0,.05);
+      margin-bottom: 0px;
+      border-bottom: none;
+      display: block;
+    }
 
     &.btn, &.btn-large, &.btn-flat, &.btn-floating {
       margin: 10px 15px;
