@@ -195,6 +195,8 @@
             }
 
             // Make Slide Behind active slide visible
+            //Active slider will automatically update class
+            //var slider = (current + existing)
             var next_slide;
             if (swipeLeft) {
               next_slide = $curr_slide.next();
